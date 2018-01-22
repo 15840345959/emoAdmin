@@ -38,5 +38,31 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin.login']], function ()
     Route::post('/admin/edit', 'Admin\AdminController@editPost');  //新建或编辑管理员
     Route::post('/admin/search', 'Admin\AdminController@search');  //新建或编辑管理员
 
+//    日志管理
+    Route::get('/log/index', 'Admin\LogController@index');  //下载错误日志页面
+
+//    版本管理
+    Route::get('/version/index', 'Admin\VersionController@index');  //发布版本通知
+
+
+
+
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

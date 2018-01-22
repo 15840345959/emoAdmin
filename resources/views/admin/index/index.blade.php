@@ -63,7 +63,7 @@
                 </dt>
                 <dd>
                     <ul>
-                        <li><a data-href="picture-list.html" data-title="下载错误日志" href="javascript:void(0)">下载错误日志</a>
+                        <li><a data-href="{{ URL::asset('/admin/log/index') }}" data-title="下载错误日志" href="javascript:void(0)">下载错误日志</a>
                         </li>
                     </ul>
                 </dd>
@@ -75,7 +75,7 @@
                 </dt>
                 <dd>
                     <ul>
-                        <li><a data-href="product-brand.html" data-title="发布版本通知" href="javascript:void(0)">发布版本通知</a>
+                        <li><a data-href="{{ URL::asset('/admin/version/index') }}" data-title="发布版本通知" href="javascript:void(0)">发布版本通知</a>
                         </li>
                     </ul>
                 </dd>
