@@ -87,7 +87,7 @@
                 </dt>
                 <dd>
                     <ul>
-                        <li><a data-href="http://h-ui.duoshuo.com/admin/" data-title="查询用户信息"
+                        <li><a data-href="{{ URL::asset('/admin/user/index') }}" data-title="查询用户信息"
                                href="javascript:;">查询用户信息</a></li>
                     </ul>
                 </dd>
@@ -100,7 +100,8 @@
                 </dt>
                 <dd>
                     <ul>
-                        <li><a data-href="member-list.html" data-title="创建公司" href="javascript:;">创建公司</a></li>
+                        <li><a data-href="{{ URL::asset('/admin/company/index') }}" data-title="公司管理" href="javascript:;">公司管理</a></li>
+                        <li><a data-href="{{ URL::asset('/admin/company/create') }}" data-title="创建公司" href="javascript:;">创建公司</a></li>
                     </ul>
                 </dd>
             </dl>
@@ -112,6 +113,7 @@
                 </dt>
                 <dd>
                     <ul>
+                        <li><a data-href="member-list.html" data-title="公司模板管理" href="javascript:;">公司模板管理</a></li>
                         <li><a data-href="member-list.html" data-title="公司模板导出" href="javascript:;">公司模板导出</a></li>
                         <li><a data-href="member-del.html" data-title="流程模板管理" href="javascript:;">流程模板管理</a></li>
                         <li><a data-href="member-level.html" data-title="流程模板预设控件编辑" href="javascript:;">流程模板预设控件编辑</a>

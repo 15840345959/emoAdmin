@@ -44,6 +44,14 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin.login']], function ()
 //    版本管理
     Route::get('/version/index', 'Admin\VersionController@index');  //发布版本通知
 
+//   用户账户管理
+    Route::get('/user/index', 'Admin\UserController@index');  //查询用户信息
+    Route::get('/user/edit', 'Admin\UserController@edit');  //重置密码
+
+//    公司管理
+    Route::get('/company/index', 'Admin\CompanyController@index');  //公司管理
+    Route::get('/company/create', 'Admin\CompanyController@create');  //创建公司
+
 
 
 

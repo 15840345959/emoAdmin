@@ -37,25 +37,17 @@
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2">升级说明：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                    <textarea class="textarea valid" placeholder="输入上级说明"></textarea>
+                    <textarea class="textarea valid" placeholder="输入升级说明"></textarea>
                     {{--<p class="textarea-numberbar"><em class="textarea-length">0</em>/500</p> name="beizhu" onkeyup="$.Huitextarealength(this,500)"--}}
                 </div>
             </div>
-
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">复选框：</label>
-                <div class="formControls skin-minimal col-xs-8 col-sm-9">
-                    <div class="check-box">
-                        <div class="icheckbox-blue"><input type="checkbox" id="checkbox-5" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                        <label for="checkbox-5" class="">复选框</label>
-                    </div>
-                    <div class="check-box">
-                        <div class="icheckbox-blue checked"><input type="checkbox" id="checkbox-6" checked="" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                        <label for="checkbox-6" class="">复选框 checked状态</label>
-                    </div>
+                <label class="form-label col-xs-4 col-sm-2"></label>
+                <div class="check-box col-xs-4 col-sm-2" style="padding-left: 15px;">
+                    <input type="checkbox" id="checkbox-1">
+                    <label for="checkbox-1">复选框</label>
                 </div>
             </div>
-
 
             <div class="row cl">
                 <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
