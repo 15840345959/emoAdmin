@@ -113,12 +113,12 @@
                 </dt>
                 <dd>
                     <ul>
-                        <li><a data-href="member-list.html" data-title="公司模板管理" href="javascript:;">公司模板管理</a></li>
-                        <li><a data-href="member-list.html" data-title="公司模板导出" href="javascript:;">公司模板导出</a></li>
-                        <li><a data-href="member-del.html" data-title="流程模板管理" href="javascript:;">流程模板管理</a></li>
-                        <li><a data-href="member-level.html" data-title="流程模板预设控件编辑" href="javascript:;">流程模板预设控件编辑</a>
+                        <li><a data-href="{{ URL::asset('/admin/template/comTemplate') }}" data-title="公司模板管理" href="javascript:;">公司模板管理</a></li>
+                        <li><a data-href="{{ URL::asset('/admin/template/temExport') }}" data-title="公司模板导出" href="javascript:;">公司模板导出</a></li>
+                        <li><a data-href="{{ URL::asset('/admin/template/processTem') }}" data-title="流程模板管理" href="javascript:;">流程模板管理</a></li>
+                        <li><a data-href="{{ URL::asset('/admin/template/temEdit') }}" data-title="流程模板预设控件编辑" href="javascript:;">流程模板预设控件编辑</a>
                         </li>
-                        <li><a data-href="member-scoreoperation.html" data-title="流程模板预设控件升级" href="javascript:;">流程模板预设控件升级</a>
+                        <li><a data-href="{{ URL::asset('/admin/template/upTem') }}" data-title="流程模板预设控件升级" href="javascript:;">流程模板预设控件升级</a>
                         </li>
                         <li><a data-href="member-scoreoperation.html" data-title="流程分组管理" href="javascript:;">流程分组管理</a>
                         </li>

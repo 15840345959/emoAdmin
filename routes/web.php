@@ -52,6 +52,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin.login']], function ()
     Route::get('/company/index', 'Admin\CompanyController@index');  //公司管理
     Route::get('/company/create', 'Admin\CompanyController@create');  //创建公司
 
+//    公司模板管理
+    Route::get('/template/comTemplate', 'Admin\TemplateController@comTemplate');  //公司模板管理
+    Route::get('/template/temExport', 'Admin\TemplateController@temExport');  //公司模板导出
+    Route::get('/template/processTem', 'Admin\TemplateController@processTem');  //流程模板管理
+    Route::get('/template/temEdit', 'Admin\TemplateController@temEdit');  //流程模板预置控件编辑
+    Route::get('/template/upTem', 'Admin\TemplateController@upTem');  //流程模板预置控件升级
+
 
 
 

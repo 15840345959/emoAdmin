@@ -1,74 +1,34 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 创建公司 <span
-                class="c-gray en">&gt;</span> 创建公司 <a class="btn btn-success radius r btn-refresh"
+    <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span>公司模板管理 <span
+                class="c-gray en">&gt;</span> 流程模板预置控件编辑 <a class="btn btn-success radius r btn-refresh"
                                                       style="line-height:1.6em;margin-top:3px"
                                                       href="javascript:location.replace(location.href);" title="刷新"
-                                                      onclick="location.replace('{{URL::asset('/admin/company/create')}}');"><i
+                                                      onclick="location.replace('{{URL::asset('/admin/template/temEdit')}}');"><i
                     class="Hui-iconfont">&#xe68f;</i></a></nav>
     <div class="page-container">
         <form class="form form-horizontal" id="form-admin-add">
-            {{csrf_field()}}
+            {{--{{csrf_field()}}--}}
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>行业：</label>
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>模板类型：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                    <select id="" name="" class="select">
-                        <option value="">条目一</option>
-                        <option value="">条目二</option>
-                    </select>
-                </div>
-            </div>
-            <table class="table table-border table-bordered table-bg" style="margin-top: 3rem;margin-bottom: 3rem;">
-                <thead>
-                <tr class="text-c">
-                    <th width="40">模板ID</th>
-                    <th width="50">创建时间</th>
-                    <th width="150">来源公司</th>
-                    <th width="100">操作</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="text-c">
-                    <td>1</td>
-                    <td>111111</td>
-                    <td>4444444</td>
-                    <td class="td-manage">
-                        <a style="text-decoration:none" onClick="admin_stop(this,'1')"
-                           href="javascript:;"
-                           title="显示">
-                            <i class="Hui-iconfont">&#xe631;</i>
-                        </a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>数据库：</label>
-                <div class="formControls col-xs-8 col-sm-9">
-                    <select id="" name="" class="select">
+                    <select id="" name="" class="select" style="width: 55%;">
                         <option value="">条目一</option>
                         <option value="">条目二</option>
                     </select>
                 </div>
             </div>
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>公司名</label>
+                <label class="form-label col-xs-4 col-sm-2">模板json数据：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                    <input id="" name="" type="text" class="input-text"
-                           value="" placeholder="公司名">
+                    <textarea name="" cols="" rows="" class="textarea radius" placeholder="" style="height: 200px;width: 55%;"></textarea>
                 </div>
             </div>
-            <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>管理员id：</label>
-                <div class="formControls col-xs-8 col-sm-9">
-                    <input id="" name="" type="text" class="input-text"
-                           value="" placeholder="管理员id">
-                </div>
-            </div>
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2" style="margin-left: 15.6667%;margin-top: 1rem;margin-bottom: 1rem;">版本：<span >xxxxx</span></div>
             <div class="row cl">
                 <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                    <input class="btn btn-primary radius" type="submit" value="创建公司">
+                    <input class="btn btn-primary radius" type="submit" value="保存">
                 </div>
             </div>
         </form>

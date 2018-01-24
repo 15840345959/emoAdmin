@@ -53,7 +53,8 @@
                     </a>
                     <a title="重置密码" href="edit"
                        class="ml-5" style="text-decoration:none">
-                        <i class="Hui-iconfont">&#xe6df;</i>
+                        <i class="icon iconfont icon-zhongzhimima"></i>
+                        {{--<i class="Hui-iconfont">&#xe6df;</i>--}}
                     </a>
                 </td>
             </tr>
