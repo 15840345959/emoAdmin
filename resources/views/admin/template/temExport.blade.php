@@ -40,7 +40,7 @@
             <table class="table table-border table-bordered table-bg" style="margin-top: 3rem;margin-bottom: 3rem;">
                 <thead>
                 <tr class="text-c">
-                    <th width="40">模板ID</th>
+                    <th width="40">公司ID</th>
                     <th width="50">公司名</th>
                     <th width="150">创建时间</th>
                     <th width="150">公司人数</th>
