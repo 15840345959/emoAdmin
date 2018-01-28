@@ -48,6 +48,27 @@ class TemplateController
         return view('admin.template.upTem', ['admin' => $admin]);
     }
 
+//    组织架构管理
+    public function orgStructure(Request $request)
+    {
+        $admin = $request->session()->get('admin');
+        return view('admin.template.orgStructure', ['admin' => $admin]);
+    }
+
+//    流程审批配置管理
+    public function processConfigur(Request $request)
+    {
+        $admin = $request->session()->get('admin');
+        return view('admin.template.processConfigur', ['admin' => $admin]);
+    }
+
+//    流程分组管理
+    public function processGroup(Request $request)
+    {
+        $admin = $request->session()->get('admin');
+        return view('admin.template.processGroup', ['admin' => $admin]);
+    }
+
 
 
 

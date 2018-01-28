@@ -58,6 +58,18 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin.login']], function ()
     Route::get('/template/processTem', 'Admin\TemplateController@processTem');  //流程模板管理
     Route::get('/template/temEdit', 'Admin\TemplateController@temEdit');  //流程模板预置控件编辑
     Route::get('/template/upTem', 'Admin\TemplateController@upTem');  //流程模板预置控件升级
+    Route::get('/template/orgStructure', 'Admin\TemplateController@orgStructure');  //组织架构管理
+    Route::get('/template/processConfigur', 'Admin\TemplateController@processConfigur');  //流程审批配置管理
+    Route::get('/template/processGroup', 'Admin\TemplateController@processGroup');  //流程分组管理
+
+//    组织架构管理移动部门2
+    Route::get('/orgStructure/moveDepartment', 'Admin\orgStructureController@moveDepartment');  //组织架构管理移动部门2
+    Route::get('/orgStructure/departMove', 'Admin\orgStructureController@departMove');  //组织架构部门移动
+    Route::get('/orgStructure/addJuniorDepartment', 'Admin\orgStructureController@addJuniorDepartment');  //添加下级部门
+    Route::get('/orgStructure/personnelMove', 'Admin\orgStructureController@personnelMove');  //人员移动
+    Route::get('/orgStructure/role', 'Admin\orgStructureController@role');  //人员移动
+    Route::get('/orgStructure/addOnePerson', 'Admin\orgStructureController@addOnePerson');  //添加单个人员
+    Route::get('/orgStructure/addBatchPerson', 'Admin\orgStructureController@addBatchPerson');  //添加批量人员
 
 
 

@@ -106,8 +106,8 @@
                 </dd>
             </dl>
             <dl id="menu-member">
-                <dt>
-                    <i class="icon iconfont icon-moban"></i>
+                <dt><i class="icon iconfont icon-moban"></i>
+
                     <span class="margin-left-10">公司模板管理</span>
                     <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>
                 </dt>
@@ -120,14 +120,19 @@
                         </li>
                         <li><a data-href="{{ URL::asset('/admin/template/upTem') }}" data-title="流程模板预设控件升级" href="javascript:;">流程模板预设控件升级</a>
                         </li>
-                        <li><a data-href="member-scoreoperation.html" data-title="流程分组管理" href="javascript:;">流程分组管理</a>
+                        <li><a data-href="{{ URL::asset('/admin/template/processGroup') }}" data-title="流程分组管理" href="javascript:;">流程分组管理</a>
                         </li>
-                        <li><a data-href="member-scoreoperation.html" data-title="流程审批配置管理"
-                               href="javascript:;">流程审批配置管理</a>
+                        <li><a data-href="{{ URL::asset('/admin/template/processConfigur') }}" data-title="流程审批配置管理" href="javascript:;">流程审批配置管理</a>
                         </li>
+                        <li><a data-href="{{ URL::asset('/admin/template/orgStructure') }}" data-title="组织架构管理" href="javascript:;">组织架构管理</a>
+                        </li>
+                        <li><a data-href="{{ URL::asset('/admin/orgStructure/moveDepartment') }}" data-title="组织架构管理-部门移动2" href="javascript:;">组织架构管理-部门移动2</a>
+                        </li>
+
                     </ul>
                 </dd>
             </dl>
+
         </div>
     </aside>
     <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a>

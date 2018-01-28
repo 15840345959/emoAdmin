@@ -3,29 +3,20 @@
 @section('content')
 
     <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 公司模板管理 <span
-                class="c-gray en">&gt;</span> 流程模板管理 <a class="btn btn-success radius r btn-refresh"
+                class="c-gray en">&gt;</span> 流程分组管理 <a class="btn btn-success radius r btn-refresh"
                                                         style="line-height:1.6em;margin-top:3px"
                                                         href="javascript:location.replace(location.href);" title="刷新"
-                                                        onclick="location.replace('{{URL::asset('/admin/template/processTem')}}');"><i
+                                                        onclick="location.replace('{{URL::asset('/admin/template/processGroup')}}');"><i
                     class="Hui-iconfont">&#xe68f;</i></a></nav>
     <div class="page-container">
-
-        <div class="cl pd-5 mt-20">
-            <span class="l">
-                 <a href="javascript:;" onclick=""
-                    class="btn btn-primary radius">
-                     流程
-                 </a>
-            </span>
-        </div>
         <table class="table table-border table-bordered table-bg" style="margin-top: 3rem;">
             <thead>
             <tr class="text-c">
-                <th width="40">流程 class id</th>
-                <th width="50">流程名称</th>
-                <th width="150">最新id</th>
-                <th width="90">流程类别</th>
-                <th width="100">是否推送更新</th>
+                <th width="90">模板公司</th>
+                <th width="90">读取模板</th>
+                <th width="90">选择模板</th>
+                <th width="90">选择职能</th>
+                <th width="90">设置分组</th>
             </tr>
             </thead>
             <tbody>
@@ -33,7 +24,6 @@
                 <td>1</td>
                 <td>111111</td>
                 <td>4444444</td>
-                <td>烦烦烦方法</td>
                 <td class="td-manage">
                     {{--<div class="skin-minimal">--}}
                         <div class="check-box">
@@ -41,6 +31,7 @@
                         </div>
                     {{--</div>--}}
                 </td>
+                <td>烦烦烦方法</td>
             </tr>
             </tbody>
         </table>
@@ -78,7 +69,7 @@
                 <thead>
                 <tr class="text-c">
                     <th width="40">公司ID</th>
-                    <th width="50">公司名称</th>
+                    <th width="50">公司分组</th>
                     <th width="150">创建时间</th>
                     <th width="90">公司人数</th>
                     <th width="100">是否升级</th>

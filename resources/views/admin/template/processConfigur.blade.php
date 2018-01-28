@@ -3,10 +3,10 @@
 @section('content')
 
     <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 公司模板管理 <span
-                class="c-gray en">&gt;</span> 流程模板管理 <a class="btn btn-success radius r btn-refresh"
+                class="c-gray en">&gt;</span> 流程审批配置管理 <a class="btn btn-success radius r btn-refresh"
                                                         style="line-height:1.6em;margin-top:3px"
                                                         href="javascript:location.replace(location.href);" title="刷新"
-                                                        onclick="location.replace('{{URL::asset('/admin/template/processTem')}}');"><i
+                                                        onclick="location.replace('{{URL::asset('/admin/template/processConfigur')}}');"><i
                     class="Hui-iconfont">&#xe68f;</i></a></nav>
     <div class="page-container">
 
@@ -21,11 +21,11 @@
         <table class="table table-border table-bordered table-bg" style="margin-top: 3rem;">
             <thead>
             <tr class="text-c">
-                <th width="40">流程 class id</th>
-                <th width="50">流程名称</th>
-                <th width="150">最新id</th>
-                <th width="90">流程类别</th>
-                <th width="100">是否推送更新</th>
+                <th width="40">流程名称</th>
+                <th width="50">审批路径</th>
+                <th width="150">审批条件</th>
+                <th width="90">打印动作</th>
+                <th width="100">是否移动顺序</th>
             </tr>
             </thead>
             <tbody>
@@ -74,6 +74,15 @@
             {{--</form>--}}
         </div>
         <form class="form form-horizontal" id="form-admin-add" style="margin-top: 2rem;">
+            {{--<div class="row cl">--}}
+                {{--<label class="form-label col-xs-4 col-sm-1"><span class="c-red"></span>行业：</label>--}}
+                {{--<div class="formControls col-xs-8 col-sm-2">--}}
+                    {{--<select id="" name="" class="select">--}}
+                        {{--<option value="">条目一</option>--}}
+                        {{--<option value="">条目二</option>--}}
+                    {{--</select>--}}
+                {{--</div>--}}
+            {{--</div>--}}
             <table class="table table-border table-bordered table-bg" style="margin-top: 3rem;">
                 <thead>
                 <tr class="text-c">
